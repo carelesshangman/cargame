@@ -1,0 +1,77 @@
+canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+body{
+    position: fixed;
+    overflow: hidden;
+}
+
+.onTop {
+	position:fixed;
+	top: 10px;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	display:block;
+
+}
+
+.onTopLeft {
+	position:fixed;
+	top: 10px;
+	width: 100%;
+	text-align: left;
+	z-index: 100;
+	display:block;
+}
+
+.death {
+    color: red;
+    position:fixed;
+	top: 10px;
+	width: 100%;
+    font-size: 250px;
+	text-align: center;
+	z-index: 100;
+	display:block;
+    -webkit-text-stroke: 2px black;
+}
+
+.center {
+	position: absolute;
+	left: 50%;
+	width: max-content;
+	height: max-content;
+	z-index: 100;
+  }
+
+.spaceBar{
+	position: absolute;
+	left: 50%;
+	height: 200px;
+	object-fit: cover;
+  }
+
+.spaceBar:hover {
+	animation: shake 0.5s;
+	animation-iteration-count: infinite;
+	height: 200px;
+	object-fit: cover;
+  }
+  
+  @keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
